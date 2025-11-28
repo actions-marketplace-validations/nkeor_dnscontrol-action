@@ -1,6 +1,6 @@
 # DNSControl Action
 
-![](https://github.com/is-cool-me/dnscontrol-action/workflows/build/badge.svg)
+![](https://github.com/nkeor/dnscontrol-action/workflows/build/badge.svg)
 
 Deploy your DNS configuration using [GitHub Actions](https://github.com/actions)
 using [DNSControl](https://github.com/StackExchange/dnscontrol/).
@@ -24,10 +24,10 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: DNSControl check
-        uses: is-cool-me/dnscontrol-action@v4.13.0
+        uses: nkeor/dnscontrol-action@v4.27.1
         with:
           args: check
 
@@ -54,7 +54,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl preview
-        uses: is-cool-me/dnscontrol-action@v4.13.0
+        uses: nkeor/dnscontrol-action@v4.27.1
         id: dnscontrol_preview
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -134,7 +134,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl push
-        uses: is-cool-me/dnscontrol-action@v4.13.0
+        uses: nkeor/dnscontrol-action@v4.27.1
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         with:
