@@ -1,7 +1,7 @@
 ---
-name: DNSControl Action ICME
+name: DNSControl Action NK
 description: Deploy your DNS configuration to multiple providers
-author: light <admin@lighthosting.eu.org>
+author: Namkhai B. <nk@nkeor.me>
 branding:
   icon: cloud
   color: yellow
