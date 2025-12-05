@@ -9,7 +9,7 @@ LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="yellow"
 
 ENV DNSCONTROL_VERSION="4.28.1"
-ENV DNSCONTROL_CHECKSUM="078aba7e0b7c962dc16a0b3944731a7f3c645a03a2b91a3cd6c3bb314da6f339"
+ENV DNSCONTROL_CHECKSUM="f67021f23543b9ae4b58f31bfbab34896c4479bfe643f145f85eb24d2f9b7abf"
 ENV USER=dnscontrol-user
 
 RUN apk -U --no-cache upgrade && \
