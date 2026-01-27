@@ -1,6 +1,6 @@
 FROM alpine:3.22.2@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
 
-LABEL repository="https://github.com/is-cool-me/dnscontrol-action"
+LABEL repository="https://github.com/nkeor/dnscontrol-action"
 LABEL maintainer="Namkhai B. <nk@nkeor.me>"
 
 LABEL "com.github.actions.name"="DNSControl"
@@ -8,8 +8,8 @@ LABEL "com.github.actions.description"="Deploy your DNS configuration to multipl
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="yellow"
 
-ENV DNSCONTROL_VERSION="4.28.1"
-ENV DNSCONTROL_CHECKSUM="f67021f23543b9ae4b58f31bfbab34896c4479bfe643f145f85eb24d2f9b7abf"
+ENV DNSCONTROL_VERSION="4.30.0"
+ENV DNSCONTROL_CHECKSUM="8105cc27704b47bf984310962a2231ad083727fa08a1163fa22af3ff42d00693"
 ENV USER=dnscontrol-user
 
 RUN apk -U --no-cache upgrade && \
